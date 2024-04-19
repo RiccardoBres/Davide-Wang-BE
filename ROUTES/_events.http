@@ -1,0 +1,20 @@
+POST HTTP://localhost:9090/event/create HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "name": "First",
+    "location": "Porto, Portugal",
+    "date": "11-12-15",
+    "generalInfo": "650315e5522b8e64aea19764",
+    "images": "650315e5522b8e64aea19764"
+}
+
+####
+GET HTTP://localhost:9090/events HTTP/1.1
+####
+
+GET HTTP://localhost:9090/event/66127e692e88059393f1eac9 HTTP/1.1
+####
+
+DELETE HTTP://localhost:9090/delete/event/66127e692e88059393f1eac9 HTTP/1.1
